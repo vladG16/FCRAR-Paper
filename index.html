@@ -1,30 +1,110 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FCRAR 2025 Submission — Husky Robot Navigation</title>
+  <title>Husky Robot Navigation – FCRAR 2025</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; max-width: 800px; }
-    h1 { color: #333366; }
-    h2 { color: #555; }
-    a { color: #0066cc; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #222;
+    }
+
+    .authors {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .author {
+      text-align: center;
+    }
+
+    .author img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+
+    .author-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .affiliation {
+      font-size: 14px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #444;
+      color: white;
+      padding: 10px 18px;
+      margin: 25px auto;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: left;
+    }
   </style>
 </head>
 <body>
-  <h1>Accelerating Early-Stage Robot Navigation Development with Motion Capture and ROS</h1>
-  <p><strong>Authors:</strong> Pratik Mukherjee, Daniel Granda, Vladimir Gunichev, Caleb Sanchez</p>
-  <p><strong>Affiliation:</strong> Department of Ocean and Mechanical Engineering, Florida Atlantic University (FAU)</p>
+  <div class="container">
+    <h1>Accelerating Early-Stage Robot Navigation with Motion Capture and ROS</h1>
 
-  <h2>Abstract</h2>
-  <p>This paper presents and validates a waypoint navigation system that integrates the OptiTrack motion capture system with ROS Noetic. Utilizing precise positioning data, we demonstrate successful navigation of the Husky A200 robot platform without the need for onboard sensors, relying solely on external camera positioning and odometry.</p>
+    <div class="authors">
+      <div class="author">
+        <img src="image.png" alt="Pratik Mukherjee">
+        <div class="author-name">Pratik Mukherjee</div>
+      </div>
+      <div class="author">
+        <img src="image.png" alt="Daniel Granda">
+        <div class="author-name">Daniel Granda</div>
+      </div>
+      <div class="author">
+        <img src="image.png" alt="Vladimir Gunichev">
+        <div class="author-name">Vladimir Gunichev</div>
+      </div>
+      <div class="author">
+        <img src="image.png" alt="Caleb Sanchez">
+        <div class="author-name">Caleb Sanchez</div>
+      </div>
+    </div>
 
-  <h2>Methodology</h2>
-  <p>The Husky robot was guided using waypoints recorded via a joystick, navigating a predefined path using pose data streamed from OptiTrack into ROS. Our experiments confirmed that external motion capture is effective for early-stage testing of navigation strategies.</p>
+    <div class="affiliation">Department of Ocean and Mechanical Engineering, Florida Atlantic University</div>
 
-  <h2>Conclusion</h2>
-  <p>This method greatly accelerates development by reducing complexity and allowing for sensor-free validation. Future work will include SLAM integration and deployment for real-world tasks like power system inspections.</p>
+    <a href="FCRAR_Submission_Husky.pdf" class="button" target="_blank">📄 Download Full Paper (PDF)</a>
 
-  <p><a href="FCRAR_Submission_Husky.pdf" target="_blank">📄 Download Full Paper (PDF)</a></p>
+    <p><strong>Summary:</strong></p>
+    <p>This project presents a ROS-based waypoint navigation system using Clearpath's Husky A200 robot and the OptiTrack motion capture system. By using accurate external positioning data instead of traditional onboard sensors, the team streamlined the development and testing of robot navigation algorithms.</p>
+
+    <p>Waypoints are recorded via joystick and autonomously followed in simulation and real-world tests. The system significantly reduces development complexity and speeds up prototyping — a valuable approach for both ground robots and UAVs. Future work includes integrating SLAM and real-world deployment under Florida Power & Light (FPL) sponsorship.</p>
+  </div>
 </body>
 </html>
